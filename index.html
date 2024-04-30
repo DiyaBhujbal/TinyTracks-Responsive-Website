@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content="Stay organized with our user-friendly Calendar featuring events, reminders, and a customizable interface. Built with HTML, CSS, and JavaScript. Start scheduling today!"/>
+    <meta
+    name="keywords"
+    content="calendar, events, reminders, javascript, html, css, open source coding"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+
+    <title>Responsive TinyTracks Website</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- lightgallery css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-baby"></i> TinyTracks</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
+        </nav>
+        
+        <div class="icons">
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <form action="afterlogin.html" class="login-form">
+            <h2>Welcome Back!</h2>
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a> </p>
+            <p>Don't have an account? <a href="#signup-form">Signup</a> </p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>welcome to our <span>TinyTracks</span></h3>
+            <p>"Welcome to the world, where every milestone counts! Our app is your trusted companion,
+                capturing and celebrating every precious moment of your little one's journey from day one." </p>
+        </div>
+
+        <div class="image">
+            <img src="images/home2.png" alt="">
+        </div>
+
+        <div class="custom-shape-divider-bottom-1684324473">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about us section starts -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> us</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/about us2.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Exploring, Growing, And Thriving Together</h3>
+                <p>Welcome to TinyTracks, your dedicated partner in the incredible journey of parenthood. 
+                   At TinyTracks, we understand that welcoming a newborn into your family is a joyous and 
+                   transformative experience,filled with countless unforgettable moments.
+                   Our mission is simple: to support and empower parents as they navigate the early stages 
+                   of their baby's life. Whether it's tracking feeding schedules, monitoring growth milestones,
+                   or capturing those precious first smiles, our app is designed to make every step of this 
+                   journey as seamless and memorable as possible.With a user-friendly interface and a 
+                   comprehensive set of features,TinyTracks is here to simplify the complexities of newborn 
+                   care while providing invaluable insights and guidance along the way. From personalized reminders 
+                   to expert tips and advice, we're committed to helping you feel confident and prepared as you embrace 
+                   the adventure of parenthood.  
+                   Join our community of parents worldwide and let TinyTracks be your trusted companion on this extraordinary voyage. Together, let's celebrate the wonder of new life and create lasting memories that you'll cherish for a lifetime.</p>  
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about us section ends -->
+
+    <section class="signup-form" id="signup-form">
+
+            <h1 class="heading"> <span>Sign</span> up</h1>
+            <div class="row">
+                  
+                <form action="">
+                    <h2>Welcome!</h2>
+                    <h3>Signup</h3>
+                    <div class="inputBox">
+                        <input type="text" placeholder="your name" required>
+                        <input type="email" placeholder="your email" required>
+                        <input type="number" placeholder="your number" required>
+                        <input type="text" placeholder="Your Toddlers/babies name" required>
+                    </div>
+                    
+                    <a href="#" class="btn">Signup</a>
+                
+                </form>
+    
+            </div>
+    
+        </section>
+
+    </section>
+
+    <!-- contact section starts -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span> us</h1>
+
+        <div class="icons-container">
+
+            <div class="icons">
+                <i class="fas fa-envelope"></i>
+                <h3>email</h3>
+                <p>diyab0225@gmail.com</p>
+                <p>diyab0225@gmail.com</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>phone number</h3>
+                <p>9970768528</p>
+                <p>9970768528</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-baby"></i> TinyTracks </h3>
+                <p>Maharashtra, Pune-14.</p>
+            </div>
+
+            <div class="box">
+                <h3>category</h3>
+                <a href="#"> <i class="fas fa-caret-right"></i> home </a>
+                <a href="#"> <i class="fas fa-caret-right"></i> about us</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> contact us</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> login </a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-caret-right"></i> privacy policy</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> terms of use</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> site map</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> FAQs</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> accessibility statement</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- lightgallery cdn js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+    <script>
+        lightGallery(document.querySelector('.gallery .gallery-container'));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --lavender2: #edebfa;
+    --lavender3: #d9d5f5;
+    --lavender: #9184dd;
+    --pink: #e7b1bc;
+    --black: #1d1c1c;
+    --white: #fff;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color:  #f0e0e0;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    flex: 1 1 50rem;
+    border: 0.1rem solid var( --lavender3);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background-color: var( --lavender2);
+}
+
+.heading{
+    font-size: 4rem;
+    color: var(--black);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 6rem;
+  }
+  
+  .heading span{
+    color: var(--lavender);
+    text-transform: uppercase;
+  }
+
+input[type="file"] {
+    margin: 10px auto;
+    display: block;
+    padding: 10px;
+    border: 2px solid var(--lavender3);
+    border-radius: 5px;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    border-color: var(--lavender);
+}
+
+textarea {
+    font-size: 1rem;
+    border: 0.1rem solid var( --lavender3);;
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    margin: .7rem auto; /* Adjusted margin to center vertically and horizontally */
+    display: block; /* Ensures the textarea takes up full width */
+    width: calc(100% - 2.4rem); /* Adjusted width to account for padding */
+    max-width: 100%; /* Ensures the textarea doesn't overflow its container */
+    resize: none;
+}
+
+
+button {
+    margin-top: 1rem;
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    border: .1rem solid var(--lavender);
+    color: var(--lavender);
+    background: none;
+    cursor: pointer;
+    font-size: 1rem; 
+}
+
+
+
+button:hover {
+    background: var(--lavender);
+    color: var(--white);
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center; /* Align items vertically */
+    margin-top: 20px;
+    width: 100%; /* Ensure the gallery takes up full width */
+    max-width: calc(100% - 40px); /* Subtract padding from container */
+    overflow: auto; /* Add scroll if necessary */
+}
+
+
+.image-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: var(--lavender);
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+/* memorybook.css */
+
+.uploaded-image {
+    max-width: 100%;
+    max-height: 300px; /* Adjust the maximum height as needed */
+  }
+  
+  .uploaded-text {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
